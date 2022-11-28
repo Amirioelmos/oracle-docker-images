@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build OracleDatabase/SingleInstance/dockerfiles/12.1.0.2/ --file Dockerfile.ee --tag my-image-name:$(date +%s)
+      run: docker build OracleDatabase/SingleInstance/dockerfiles/12.1.0.2/ --file OracleDatabase/SingleInstance/dockerfiles/12.1.0.2/Dockerfile.ee --tag my-image-name:$(date +%s)
